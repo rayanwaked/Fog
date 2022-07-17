@@ -68,11 +68,9 @@ struct HomeView: View {
 
             }
         }
-        //MARK: Main Container Style
-        .padding(.leading, 10)
-        .padding(.trailing, 10)
         //MARK: Main Container Size
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        /// Looking for the padding? It's built into the width and height variables. See the FogApp File for further details.
     }
 }
 

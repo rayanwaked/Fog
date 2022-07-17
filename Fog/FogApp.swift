@@ -12,18 +12,30 @@ import SwiftUI
 //MARK: Width
 var width: CGFloat {
     if UIDevice.current.userInterfaceIdiom == .phone {
-        return UIScreen.main.bounds.width * 1
+        // -0.05 As built in padding on leading and trailing edges
+        return UIScreen.main.bounds.width * 0.95
     } else {
-        return UIScreen.main.bounds.width * 0.5
+        // +0.125 As built in padding reduction on leading and trailing edges
+        return UIScreen.main.bounds.width * 1.125
     }
 }
 
 //MARK: Height
 var height: CGFloat {
     if UIDevice.current.userInterfaceIdiom == .phone {
-        return UIScreen.main.bounds.height * 1
+        // -0.05 As built in padding on leading and trailing edges
+        return UIScreen.main.bounds.height * 0.95
     } else {
-        return UIScreen.main.bounds.height * 0.5
+        return UIScreen.main.bounds.height * 1
+    }
+}
+
+//MARK: Padding
+var borderPadding: CGFloat {
+    if UIDevice.current.userInterfaceIdiom == .phone {
+        return UIScreen.main.bounds.width * 0
+    } else {
+        return UIScreen.main.bounds.width * -0.125
     }
 }
 

@@ -11,6 +11,8 @@
 		A102BA5D2877F81A003A72C7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102BA5C2877F81A003A72C7 /* MainView.swift */; };
 		A102BA5F2877F81B003A72C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A102BA5E2877F81B003A72C7 /* Assets.xcassets */; };
 		A102BA632877F81B003A72C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A102BA622877F81B003A72C7 /* Preview Assets.xcassets */; };
+		A187B82C28832D9E0071BC21 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187B82B28832D9E0071BC21 /* PrimaryButton.swift */; };
+		A1B727F928791048003F115A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B727F828791048003F115A /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		A102BA5E2877F81B003A72C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A102BA602877F81B003A72C7 /* Fog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fog.entitlements; sourceTree = "<group>"; };
 		A102BA622877F81B003A72C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A187B82B28832D9E0071BC21 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		A1B727F828791048003F115A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 				A102BA5E2877F81B003A72C7 /* Assets.xcassets */,
 				A102BA602877F81B003A72C7 /* Fog.entitlements */,
 				A102BA5A2877F81A003A72C7 /* FogApp.swift */,
+				A102BA5C2877F81A003A72C7 /* MainView.swift */,
 				A10698952878062D009D2009 /* Views */,
+				A187B82A28832D700071BC21 /* Functions */,
 				A102BA612877F81B003A72C7 /* Preview Content */,
 			);
 			path = Fog;
@@ -72,9 +78,25 @@
 		A10698952878062D009D2009 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A102BA5C2877F81A003A72C7 /* MainView.swift */,
+				A1B727F828791048003F115A /* HomeView.swift */,
+				A15F669928822F0E00DFD4A9 /* Components */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A15F669928822F0E00DFD4A9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A187B82B28832D9E0071BC21 /* PrimaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A187B82A28832D700071BC21 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B727F928791048003F115A /* HomeView.swift in Sources */,
 				A102BA5D2877F81A003A72C7 /* MainView.swift in Sources */,
 				A102BA5B2877F81A003A72C7 /* FogApp.swift in Sources */,
+				A187B82C28832D9E0071BC21 /* PrimaryButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

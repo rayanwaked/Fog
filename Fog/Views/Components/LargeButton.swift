@@ -9,7 +9,7 @@
 import SwiftUI
 
 //MARK: Code
-struct PrimaryButton: View {
+struct LargeButton: View {
     
     //MARK: Variables
     //Style Variables
@@ -34,7 +34,7 @@ struct PrimaryButton: View {
                 
             }
             //MARK: Size
-            .frame(minWidth: width/3, maxWidth: width, minHeight: height * 0.05, maxHeight: height * 0.05)
+            .frame(minWidth: width, maxWidth: width, minHeight: height * 0.25, maxHeight: height * 0.25)
             //MARK: Style
             .padding()
             .foregroundColor(foreground)
@@ -45,9 +45,9 @@ struct PrimaryButton: View {
 }
 
 //MARK: Preview
-struct PrimaryButton_Previews: PreviewProvider {
+struct LargeButton_Previews: PreviewProvider {
     static var previews: some View {
-        PrimaryButton(
+        WideButton(
             text: "Custom Button",
             icon: Image(systemName: "plus"),
             background: Color.blue,
@@ -55,6 +55,5 @@ struct PrimaryButton_Previews: PreviewProvider {
         ) {
             print("Clicked!")
         }
-
     }
 }

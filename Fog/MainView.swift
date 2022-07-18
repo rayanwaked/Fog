@@ -17,6 +17,10 @@ struct MainView: View {
             //MARK: Main View
             HomeView()
         }
+        //MARK: Superview Padding
+        .padding([.leading, .trailing], gridPadding)
+        //MARK: Superview Size
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
     }
 }
 

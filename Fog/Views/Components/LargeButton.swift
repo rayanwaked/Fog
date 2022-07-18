@@ -34,7 +34,7 @@ struct LargeButton: View {
                 
             }
             //MARK: Size
-            .frame(minWidth: width, maxWidth: width, minHeight: height * 0.25, maxHeight: height * 0.25)
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: height * 0.25, maxHeight: height * 0.25)
             //MARK: Style
             .padding()
             .foregroundColor(foreground)

@@ -1,5 +1,5 @@
 //
-//  Button.swift
+//  LargeButton.swift
 //  Fog
 //
 //  Created by Rayan Waked on 7/16/22.
@@ -17,21 +17,19 @@ struct LargeButton: View {
     var icon: Image
     var background: Color
     var foreground: Color
-    var opacity = 0.5
+    var opacity = ButtonVariables.opacity
     // Function Variables
     var clicked: (() -> Void)
     
     //MARK: Interface
     var body: some View {
         Button(action: clicked) {
+            
             HStack {
-                
                 //MARK: Button Icon
                 icon
-                
                 //MARK: Button Title
                 Text(text)
-                
             }
             //MARK: Size
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: height * 0.25, maxHeight: height * 0.25)
@@ -40,6 +38,7 @@ struct LargeButton: View {
             .foregroundColor(foreground)
             .background(background.opacity(opacity))
             .cornerRadius(16)
+            
         }
     }
 }

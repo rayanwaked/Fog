@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Fog
 //
 //  Created by Rayan Waked on 7/7/22.
@@ -13,14 +13,29 @@ import SwiftUI
 //MARK: Code
 struct MainView: View {
     var body: some View {
-        VStack {
-            //MARK: Main View
-            HomeView()
+        ZStack {
+            
+            VStack {
+                //MARK: Main View
+                HomeView()
+            }
+            //MARK: Superview Padding
+            .padding([.leading, .trailing], gridPadding)
+            
+            //MARK: Ad View
+            HStack() {
+                Spacer()
+                Circle()
+                    .padding(.trailing, -width * 0.135)
+                    .foregroundColor(.orange.opacity(1))
+                    .frame(width: width / 8)
+            }
+            .frame(maxWidth: .infinity)
+            
         }
-        //MARK: Superview Padding
-        .padding([.leading, .trailing], gridPadding)
         //MARK: Superview Size
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+        
     }
 }
 

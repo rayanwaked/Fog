@@ -11,12 +11,10 @@
 		A102BA5D2877F81A003A72C7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102BA5C2877F81A003A72C7 /* MainView.swift */; };
 		A102BA5F2877F81B003A72C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A102BA5E2877F81B003A72C7 /* Assets.xcassets */; };
 		A102BA632877F81B003A72C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A102BA622877F81B003A72C7 /* Preview Assets.xcassets */; };
-		A187B82C28832D9E0071BC21 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187B82B28832D9E0071BC21 /* PrimaryButton.swift */; };
 		A198387B2885BB3F00AA67A4 /* Code Styling.md in Resources */ = {isa = PBXBuildFile; fileRef = A198387A2885BB3F00AA67A4 /* Code Styling.md */; };
-		A198387D2885BFAB00AA67A4 /* Button Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A198387C2885BFAB00AA67A4 /* Button Variables.swift */; };
 		A1B727F928791048003F115A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B727F828791048003F115A /* HomeView.swift */; };
-		A1F4CC28288507B500210BF6 /* WideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4CC27288507B500210BF6 /* WideButton.swift */; };
-		A1F4CC2A2885093C00210BF6 /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4CC292885093C00210BF6 /* LargeButton.swift */; };
+		A1CD47F72888A4ED0093534F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CD47F62888A4ED0093534F /* SettingsView.swift */; };
+		A1F4CC28288507B500210BF6 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4CC27288507B500210BF6 /* Buttons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +24,10 @@
 		A102BA5E2877F81B003A72C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A102BA602877F81B003A72C7 /* Fog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fog.entitlements; sourceTree = "<group>"; };
 		A102BA622877F81B003A72C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A187B82B28832D9E0071BC21 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		A198387A2885BB3F00AA67A4 /* Code Styling.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Code Styling.md"; sourceTree = "<group>"; };
-		A198387C2885BFAB00AA67A4 /* Button Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button Variables.swift"; sourceTree = "<group>"; };
 		A1B727F828791048003F115A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		A1F4CC27288507B500210BF6 /* WideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideButton.swift; sourceTree = "<group>"; };
-		A1F4CC292885093C00210BF6 /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
+		A1CD47F62888A4ED0093534F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1F4CC27288507B500210BF6 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				A1B727F828791048003F115A /* HomeView.swift */,
+				A1CD47F62888A4ED0093534F /* SettingsView.swift */,
 				A15F669928822F0E00DFD4A9 /* Components */,
 			);
 			path = Views;
@@ -111,10 +108,7 @@
 		A19838792885B97500AA67A4 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				A198387C2885BFAB00AA67A4 /* Button Variables.swift */,
-				A187B82B28832D9E0071BC21 /* PrimaryButton.swift */,
-				A1F4CC27288507B500210BF6 /* WideButton.swift */,
-				A1F4CC292885093C00210BF6 /* LargeButton.swift */,
+				A1F4CC27288507B500210BF6 /* Buttons.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -190,13 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1CD47F72888A4ED0093534F /* SettingsView.swift in Sources */,
 				A1B727F928791048003F115A /* HomeView.swift in Sources */,
-				A1F4CC28288507B500210BF6 /* WideButton.swift in Sources */,
-				A198387D2885BFAB00AA67A4 /* Button Variables.swift in Sources */,
+				A1F4CC28288507B500210BF6 /* Buttons.swift in Sources */,
 				A102BA5D2877F81A003A72C7 /* MainView.swift in Sources */,
 				A102BA5B2877F81A003A72C7 /* FogApp.swift in Sources */,
-				A187B82C28832D9E0071BC21 /* PrimaryButton.swift in Sources */,
-				A1F4CC2A2885093C00210BF6 /* LargeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

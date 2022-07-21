@@ -8,33 +8,33 @@
 //MARK: Imports
 import SwiftUI
 
+//MARK: Variables
+// Global
 public var buttonTest: Bool = true
 
-func ButtonTest() {
-    switch buttonTest {
-        
-    case true: buttonTest = false
-    case false: buttonTest = true
-        
-    }
-    
-    print(buttonTest)
-}
-
-//MARK: Variables
+// File Specific
 struct ButtonVariables {
     // Style Variables
     var text: String
     var icon: Image
     var background: Color
     var foreground: Color
-    var opacity = 0.5
+    let opacity = 0.5
     
     // Function Variables
     var clicked: (() -> Void)
 }
 
-//MARK: Wide Button
+//MARK: Functions
+func ButtonTest() {
+    switch buttonTest {
+    case true: buttonTest = false
+    case false: buttonTest = true
+    }
+    
+    print(buttonTest)
+}
+
 //MARK: Code
 struct WideButton: View {
     //MARK: Function Variables
@@ -44,14 +44,14 @@ struct WideButton: View {
     var body: some View {
         Button(action: buttonVariables.clicked) {
             HStack {
-                //MARK: Button Icon
+                // Button Icon
                 Text(buttonVariables.icon)
-                //MARK: Button Title
+                // Button Title
                 Text(buttonVariables.text)
             }
-            //MARK: Size
+            // Size
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: height * 0.05, maxHeight: height * 0.05)
-            //MARK: Style
+            // Style
             .padding()
             .foregroundColor(buttonVariables.foreground)
             .background(buttonVariables.background.opacity(buttonVariables.opacity))
@@ -62,15 +62,16 @@ struct WideButton: View {
 
 //MARK: Preview
 struct WideButton_Previews: PreviewProvider {
+    // Define Variables for Preview
     static let buttonVariablesPreview = ButtonVariables (
         text: "Title",
         icon: Image(systemName: "plus"),
         background: Color.red,
         foreground: Color.white,
-        opacity: 0.5,
         clicked: { print("clicked") }
     )
     
+    // Display Preview
     static var previews: some View {
         WideButton(buttonVariables: buttonVariablesPreview)
     }

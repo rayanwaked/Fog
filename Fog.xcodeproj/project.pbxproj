@@ -14,6 +14,7 @@
 		A198387B2885BB3F00AA67A4 /* Code Styling.md in Resources */ = {isa = PBXBuildFile; fileRef = A198387A2885BB3F00AA67A4 /* Code Styling.md */; };
 		A1B727F928791048003F115A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B727F828791048003F115A /* HomeView.swift */; };
 		A1CD47F72888A4ED0093534F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CD47F62888A4ED0093534F /* SettingsView.swift */; };
+		A1CD47FA2888CCCD0093534F /* Ads.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CD47F92888CCCD0093534F /* Ads.swift */; };
 		A1F4CC28288507B500210BF6 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4CC27288507B500210BF6 /* Buttons.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		A198387A2885BB3F00AA67A4 /* Code Styling.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Code Styling.md"; sourceTree = "<group>"; };
 		A1B727F828791048003F115A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A1CD47F62888A4ED0093534F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1CD47F92888CCCD0093534F /* Ads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ads.swift; sourceTree = "<group>"; };
 		A1F4CC27288507B500210BF6 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 		A15F669928822F0E00DFD4A9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A1CD47F82888CCA10093534F /* Ads */,
 				A19838792885B97500AA67A4 /* Buttons */,
 			);
 			path = Components;
@@ -111,6 +114,14 @@
 				A1F4CC27288507B500210BF6 /* Buttons.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		A1CD47F82888CCA10093534F /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				A1CD47F92888CCCD0093534F /* Ads.swift */,
+			);
+			path = Ads;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1CD47FA2888CCCD0093534F /* Ads.swift in Sources */,
 				A1CD47F72888A4ED0093534F /* SettingsView.swift in Sources */,
 				A1B727F928791048003F115A /* HomeView.swift in Sources */,
 				A1F4CC28288507B500210BF6 /* Buttons.swift in Sources */,

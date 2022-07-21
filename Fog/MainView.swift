@@ -14,6 +14,7 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         ZStack {
+            //MARK: Superview
             VStack {
                 if buttonTest {
                     HomeView()
@@ -21,22 +22,16 @@ struct MainView: View {
                     SettingsView()
                 }
             }
-            //MARK: Superview Padding
             .padding([.leading, .trailing], gridPadding)
             
-//            //MARK: Ad View
-//            HStack() {
-//                Spacer()
-//                Circle()
-//                    .padding(.trailing, -width * 0.135)
-//                    .foregroundColor(.orange.opacity(1))
-//                    .frame(width: width / 8)
-//            }
-//            .frame(maxWidth: .infinity)
+            //MARK: AdView
+            HStack() {
+                Ads(adVariables: AdVariables (
+                ))
+            }
+            .frame(maxWidth: .infinity)
         }
-        //MARK: Superview Size
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-        
     }
 }
 

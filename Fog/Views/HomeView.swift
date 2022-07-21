@@ -26,36 +26,31 @@ struct HomeView: View {
                     .padding(.bottom, height * 0.015)
                 
                 //MARK: First Container (Row)
-                HStack() {
-                    WideButton(buttonVariables: ButtonVariables (
-                        text: "Title",
-                        icon: Image(systemName: "plus"),
-                        background: Color.orange,
-                        foreground: Color.white,
-                        opacity: 0.5,
-                        clicked: { ButtonTest() }
-                    ))
-                }
+                WideButton(buttonVariables: ButtonVariables (
+                    text: "Title",
+                    icon: Image(systemName: "plus"),
+                    background: Color.orange,
+                    foreground: Color.white,
+                    clicked: { ButtonTest() }
+                ))
 
                 //MARK: Second Container (Row)
                 HStack(alignment: .center, spacing: gridPadding) {
-                    //MARK: First Button
+                    // First Button
                     WideButton(buttonVariables: ButtonVariables (
                         text: "Title",
                         icon: Image(systemName: "plus"),
                         background: Color.blue,
                         foreground: Color.white,
-                        opacity: 0.5,
                         clicked: { print("Button 2 Clicked") }
                     ))
 
-                    //MARK: Second Button
+                    // Second Button
                     WideButton(buttonVariables: ButtonVariables (
                         text: "Title",
                         icon: Image(systemName: "plus"),
                         background: Color.blue,
                         foreground: Color.white,
-                        opacity: 0.5,
                         clicked: { print("Button 3 Clicked") }
                     ))
                 }

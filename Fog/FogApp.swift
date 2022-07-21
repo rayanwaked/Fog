@@ -9,28 +9,28 @@
 import SwiftUI
 
 //MARK: Global Varialbes
-//MARK: Width
+// Width
 var width: CGFloat {
     if UIDevice.current.userInterfaceIdiom == .phone {
-        return UIScreen.main.bounds.width * 1
+        return UIScreen.main.bounds.width * 1 /// iPhone Sizing
     } else {
-        return UIScreen.main.bounds.width * 1
+        return UIScreen.main.bounds.width * 1 /// iPad and Mac Sizing
     }
 }
-//MARK: Height
+// Height
 var height: CGFloat {
     if UIDevice.current.userInterfaceIdiom == .phone {
-        return UIScreen.main.bounds.height * 1
+        return UIScreen.main.bounds.height * 1 /// iPhone Sizing
     } else {
-        return UIScreen.main.bounds.height * 1
+        return UIScreen.main.bounds.height * 1 /// iPad and Mac Sizing
     }
 }
-//MARK: Padding
+// Padding
 var gridPadding: CGFloat {
     if UIDevice.current.userInterfaceIdiom == .phone {
-        return UIScreen.main.bounds.width / 30
+        return UIScreen.main.bounds.width / 30  /// iPhone Sizing
     } else {
-        return UIScreen.main.bounds.width / 30
+        return UIScreen.main.bounds.width / 30 /// iPad and Mac Sizing
     }
 }
 

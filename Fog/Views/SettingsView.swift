@@ -5,8 +5,12 @@
 //  Created by Rayan Waked on 7/20/22.
 //
 
+//MARK: Imports
 import SwiftUI
 
+//MARK: Variables
+
+//MARK: Code
 struct SettingsView: View {
     var body: some View {
         VStack {
@@ -21,6 +25,7 @@ struct SettingsView: View {
     }
 }
 
+//MARK: Preview
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()

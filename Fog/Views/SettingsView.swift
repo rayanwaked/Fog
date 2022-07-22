@@ -9,9 +9,14 @@
 import SwiftUI
 
 //MARK: Variables
+/// None
 
 //MARK: Code
 struct SettingsView: View {
+    //MARK: Variables
+    @EnvironmentObject var appView: AppView
+    
+    //MARK: Interface
     var body: some View {
         VStack {
             WideButton(buttonVariables: ButtonVariables (
@@ -19,7 +24,9 @@ struct SettingsView: View {
                 icon: Image(systemName: "circle"),
                 background: Color.red,
                 foreground: Color.white,
-                clicked: { ButtonTest() }
+                clicked: {
+                    appView.viewPage = 1
+                }
             ))
         }
     }
@@ -29,5 +36,6 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
+            .environmentObject(AppView())
     }
 }

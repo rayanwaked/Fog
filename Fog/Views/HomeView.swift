@@ -10,28 +10,23 @@ import SwiftUI
 
 //MARK: Code
 struct HomeView: View {
-    
     //MARK: Variables
-    /// None
+    @EnvironmentObject var appView: AppView
     
     //MARK: Interface
     var body: some View {
         //MARK: Main Container
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading, spacing: gridPadding) {
-                //MARK: Title
-                Text("Home")
-                    .font(.largeTitle.bold())
-                    .padding(.top, height * 0.025)
-                    .padding(.bottom, height * 0.015)
-                
                 //MARK: First Container (Row)
                 WideButton(buttonVariables: ButtonVariables (
                     text: "Title",
                     icon: Image(systemName: "plus"),
                     background: Color.orange,
                     foreground: Color.white,
-                    clicked: { ButtonTest() }
+                    clicked: {
+                        appView.viewPage = 2
+                        }
                 ))
 
                 //MARK: Second Container (Row)
@@ -65,5 +60,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(AppView())
     }
 }

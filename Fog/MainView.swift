@@ -10,16 +10,25 @@
 //MARK: Imports
 import SwiftUI
 
+//MARK: Control Views
+class AppView: ObservableObject {
+    @Published var viewPage = 1
+}
+
 //MARK: Code
 struct MainView: View {
+    //MARK: Variables
+    @EnvironmentObject var appView: AppView
+    
+    //MARK: Interface
     var body: some View {
         ZStack {
             //MARK: Superview
             VStack {
-                if buttonTest {
-                    HomeView()
-                }  else {
-                    SettingsView()
+                switch appView.viewPage {
+                case 1: HomeView()
+                case 2: SettingsView()
+                default: HomeView()
                 }
             }
             .padding([.leading, .trailing], gridPadding)
@@ -27,7 +36,7 @@ struct MainView: View {
             //MARK: AdView
             HStack() {
                 Ads(adVariables: AdVariables (
-                ))
+                    clicked: { }))
             }
             .frame(maxWidth: .infinity)
         }
@@ -39,5 +48,6 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .environmentObject(AppView())
     }
 }

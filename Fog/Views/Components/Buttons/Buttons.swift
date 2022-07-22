@@ -9,9 +9,6 @@
 import SwiftUI
 
 //MARK: Variables
-// Global
-public var buttonTest: Bool = true
-
 // File Specific
 struct ButtonVariables {
     // Style Variables
@@ -23,16 +20,6 @@ struct ButtonVariables {
     
     // Function Variables
     var clicked: (() -> Void)
-}
-
-//MARK: Functions
-func ButtonTest() {
-    switch buttonTest {
-    case true: buttonTest = false
-    case false: buttonTest = true
-    }
-    
-    print(buttonTest)
 }
 
 //MARK: Code

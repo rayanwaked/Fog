@@ -37,10 +37,13 @@ var gridPadding: CGFloat {
 //MARK: Main App Struct
 @main
 struct FogApp: App {
+    //MARK: Variables
+    @StateObject var appView = AppView()
+    
     var body: some Scene {
         WindowGroup {
             //MARK: Main App View
-            MainView()
+            MainView().environmentObject(AppView())
         }
     }
 }

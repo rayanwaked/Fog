@@ -10,8 +10,11 @@ import SwiftUI
 
 //MARK: Variables
 struct AdVariables {
-    var edgeAlign = (-width * 0.135)
-    var opacity = 0.5
+    @State var showingSubview = false
+    // Style Variables
+    
+    // Functional Variables
+    var clicked: (() -> Void)
 }
 
 //MARK: Code
@@ -19,14 +22,23 @@ struct Ads: View {
     //MARK: Variables
     var adVariables: AdVariables
     
+    //MARK: Inteface
     var body: some View {
         //MARK: AdView
         HStack() {
             Spacer()
-            Circle()
-                .padding(.trailing, adVariables.edgeAlign)
-                .foregroundColor(.red.opacity(adVariables.opacity))
-                .frame(width: width / 8)
+            Button(action: adVariables.clicked) {
+                ZStack {
+                    Circle()
+                        .padding(.trailing, -width * 0.135)
+                        .foregroundColor(.red.opacity(0.5))
+                        .frame(width: width / 10)
+                    Text(Image(systemName: "chevron.left"))
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .padding(.leading, 10)
+                }
+            }
         }
         .frame(maxWidth: .infinity)
     }
@@ -36,6 +48,9 @@ struct Ads: View {
 struct Ads_Previews: PreviewProvider {
     // Define Variables for Preview
     static let adVariablesPreview = AdVariables (
+        clicked: {
+            
+        }
     )
     
     // Display Preview
